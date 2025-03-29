@@ -132,6 +132,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-left: 20px;
 }
 
 #icone-menu{
@@ -166,18 +167,27 @@
    gap: 20px;
 }
 
+.container-dropdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    display: none;
+    margin-left: 240px;
+}
+
+.container-dropdown.active{
+    display: block;
+    color: #005CFF;
+}
+
 .dropdown-menu{
-    /* display: grid;
-    grid-template-columns: repeat(4,1fr); */
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
     gap: 20px;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
     width: 1200px;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     height: 329px;
-    margin-left: 20px;
 }
 
 #img-dropdown{
@@ -187,10 +197,62 @@
     margin-right: 20px;
 }
 
+.img-dropdown{
+    background-image: url('../img/imgDropdown.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 256px;
+    height: 300px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    filter: brightness(95%); 
+   
+}
+
+.img-dropdown::after{
+   
+}
+
+.valores-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+#texto-img{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.7;
+    font-family:"Nunito Sans", sans-serif;
+    margin-left: 30px;
+}
+
+#botao-img{
+    width: 116px;
+    height: 38px;
+    border: 1px  solid #FFFFFF;
+    border-radius: 12px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background-color: #ffffff00;
+    cursor: pointer;
+    margin-right: 90px;
+    margin-top: 10px;
+}
+
 .menu-principal-dropdown{
     background-color: #F5F5F5;
     height: 326px;
-     width: 234px;
+    width: 234px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    gap: -150px;   
 }
 
 .dropdown-menu ul li{
@@ -203,6 +265,11 @@
 
 #icone-departamento{
     color: #303030;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 120px;
+    margin-right: 20px;
 }
 
 
@@ -211,4 +278,5 @@
     font-size: 14px;
     font-family:"Nunito Sans", sans-serif;
     color: #656565;
+    text-align: center;
 }
