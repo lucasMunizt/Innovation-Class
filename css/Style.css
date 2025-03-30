@@ -167,7 +167,7 @@
    gap: 20px;
 }
 
-.container-dropdown{
+.container-dropdown {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -176,10 +176,14 @@
     margin-left: 240px;
 }
 
-.container-dropdown.active{
-    display: block;
+#todas-categorias:hover,#departamento-dropdown:hover{
     color: #005CFF;
 }
+
+#icone-menu:hover{
+    color: #005CFF;
+}
+
 
 .dropdown-menu{
     display: grid;
