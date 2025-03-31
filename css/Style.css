@@ -159,20 +159,25 @@
     font-weight: 700;
     font-size: 14px;
     font-family:"Nunito Sans", sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
-#icone-departamento{
-   display: flex;
-   align-items: center;
-   gap: 20px;
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 20
 }
-
+  
 .container-dropdown {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 2px;
-    display: none;
+    /* display: none; */
     margin-left: 240px;
 }
 
@@ -184,39 +189,34 @@
     color: #005CFF;
 }
 
-
 .dropdown-menu{
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    gap: 20px;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
-    width: 1200px;
-    height: 329px;
+    width:1200px;
+    height: 340px;
+    column-gap: 50px; 
 }
 
-#img-dropdown{
-    width: 256px;
-    height: 298px;
-    border-radius: 10px;
-    margin-right: 20px;
+.h5-tabelas-categorias{
+    font-weight: 700;
+    font-size: 16px;
+    font-family:"Nunito Sans", sans-serif;
+    text-align: left;
+    padding-left: 25px;
 }
+
 
 .img-dropdown{
-    background-image: url('../img/imgDropdown.png');
+    background-image: url('../img/caneca.png');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
     width: 256px;
-    height: 300px;
+    height: 320px;
     border-radius: 10px;
-    margin-right: 20px;
-    margin-top: 10px;
-    filter: brightness(95%); 
-   
-}
-
-.img-dropdown::after{
-   
+    margin-right: 50px;
+    margin-top: 5px;
 }
 
 .valores-img{
@@ -224,12 +224,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 10%;
+   margin-top: 10%;
+}
+
+.h5-tabelas-categorias{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: none;
 }
 
 #texto-img{
     color: #ffffff;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 30px;
     line-height: 1.7;
     font-family:"Nunito Sans", sans-serif;
@@ -246,17 +253,25 @@
     background-color: #ffffff00;
     cursor: pointer;
     margin-right: 90px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .menu-principal-dropdown{
     background-color: #F5F5F5;
-    height: 326px;
-    width: 234px;
+    height: 100%;
+    width: 254px;
     display: flex;
     flex-direction: column;
     justify-content: space-around; 
     gap: -150px;   
+    overflow-y: auto;  /* Habilita o scroll vertical */
+    scrollbar-width: thin; /* Para navegadores compatíveis */
+    scrollbar-color: #CECECE; 
+}
+
+
+.menu-principal-dropdown li:last-child{
+    display: none;
 }
 
 .dropdown-menu ul li{
@@ -283,4 +298,5 @@
     font-family:"Nunito Sans", sans-serif;
     color: #656565;
     text-align: center;
+    line-height: 0.8;
 }
