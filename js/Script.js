@@ -17,12 +17,10 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   function esconderDropdown(e) {
-    if (!dropdownMenu.contains(e.relatedTarget) && 
-        !todasCategorias.contains(e.relatedTarget) &&
-        !departamentoDropdown.contains(e.relatedTarget)) {
+    
         dropdownMenu.style.display = "none";
-    }
-}
+ }
+
   todasCategorias.addEventListener("mouseenter", mostrarDropdown);
   departamentoDropdown.addEventListener("mouseenter", mostrarDropdown);
   dropdownMenu.addEventListener("mouseenter", mostrarDropdown);
@@ -56,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
       dropdowMenu.style.gridTemplateColumns = "repeat(4,1fr)";
       textoDepartamento.style.display = "block";
       dropdowMenu.style.columnGap  = '100px'
-      imgDropdown.style.marginLeft = "300px"
+      imgDropdown.style.marginLeft = "250px"
       tabelasCategorias.forEach(index=>{
         index.style.marginTop = "38px";
       });
@@ -66,3 +64,19 @@ document.addEventListener("DOMContentLoaded", function() {
   dropdownMenu.addEventListener("mouseleave", esconderDropdown);
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+          delay: 3000,
+      },
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+      },
+  });
+});

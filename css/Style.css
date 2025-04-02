@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,62 +6,68 @@
     text-decoration: none;
 }
 
-.header-promocao p{
+.header-promocao p {
     text-align: center;
-    background-color:#005CFF;
+    background-color: #005CFF;
     width: 100%;
     padding: 5px;
     color: white;
     font-weight: 700;
     font-size: 14px;
-    font-family:"Nunito Sans", sans-serif;;
+    font-family: "Nunito Sans", sans-serif;
+    ;
 }
 
-#valor-desconto-background{
-    background-color:#6220C1;
+#valor-desconto-background {
+    background-color: #6220C1;
     border-radius: 5px;
     padding: 3px;
 }
 
-#nome-desconto-background{
+#nome-desconto-background {
     font-weight: 400;
 }
 
-.home-menu{
+.home-menu {
     max-width: 1920px;
     width: 100%;
     height: 118px;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
+    z-index: 10001;
+   
+    
 }
-.header-principal{
+
+.header-principal {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.primeira-secao, .segunda-secao{
+.primeira-secao,
+.segunda-secao {
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin-top: 10px;
 }
 
-.primeira-secao{
+.primeira-secao {
     gap: 50px;
     margin-left: 120px;
 }
 
-.segunda-secao{
+.segunda-secao {
     gap: 20px;
 }
 
-.campo-busca{
+.campo-busca {
     display: flex;
     align-items: center;
     width: 100%;
 }
 
-#input-busca{
+#input-busca {
     width: 540px;
     height: 40px;
     border: 1px solid rgb(206, 206, 206);
@@ -71,34 +77,34 @@
     flex: 1;
 }
 
-#input-busca::placeholder{
-   color: #000000;
-   font-weight: 600;
-   font-size: 14px;
-   font-family:"Nunito Sans", sans-serif;
+#input-busca::placeholder {
+    color: #000000;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "Nunito Sans", sans-serif;
 }
 
-#icone-busca{
+#icone-busca {
     width: 18px;
     height: 18px;
     margin-left: -40px;
 }
 
-.menu-cliente{
+.menu-cliente {
     display: flex;
     align-items: center;
     gap: 8px;
     cursor: pointer;
 }
 
-#nome-cliente{
+#nome-cliente {
     color: black;
     display: flex;
     font-weight: 600;
     font-size: 14px;
-    font-family:"Nunito Sans", sans-serif;
-   line-height: 1;
-   flex-direction: column;
+    font-family: "Nunito Sans", sans-serif;
+    line-height: 1;
+    flex-direction: column;
 }
 
 #nome-cliente::after {
@@ -108,14 +114,14 @@
 }
 
 .carrinho-compras img {
-   cursor: pointer;
+    cursor: pointer;
 }
 
-#quantidades-compras{
+#quantidades-compras {
     background-color: #005CFF;
     border-radius: 50%;
     text-align: center;
-    padding:6px;
+    padding: 6px;
     color: white;
     margin-left: 10px;
     display: flex;
@@ -128,37 +134,37 @@
     cursor: pointer;
 }
 
-.header-menu{
+.header-menu {
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin-left: 20px;
 }
 
-#icone-menu{
-   padding-right: 5px;
+#icone-menu {
+    padding-right: 5px;
 }
 
-.lista-menu{
+.lista-menu {
     display: flex;
     margin-top: 30px;
     align-items: center;
     justify-content: space-around;
     gap: 20px;
-    
+
 }
 
-.lista-menu li{
+.lista-menu li {
     cursor: pointer;
     font-weight: 400;
     font-size: 14px;
-    font-family:"Nunito Sans", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
 }
 
-#todas-categorias{
+#todas-categorias {
     font-weight: 700;
     font-size: 14px;
-    font-family:"Nunito Sans", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     text-align: center;
     display: flex;
     align-items: center;
@@ -166,52 +172,57 @@
 
 .material-symbols-outlined {
     font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 20
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 20
 }
-  
+
 .container-dropdown {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     margin-top: 2px;
-    /* display: none; */
-    margin-left: 240px;
+    width: max-content;
+    left: 85%;
+    transform: translateX(-85%); 
+    z-index: 10001;
+    position: absolute;
+    background-color: #FFFFFF;
 }
 
-#todas-categorias:hover,#departamento-dropdown:hover{
+#todas-categorias:hover,
+#departamento-dropdown:hover {
     color: #005CFF;
 }
 
-#icone-menu:hover{
+#icone-menu:hover {
     color: #005CFF;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
-    width:1200px;
+    width: 1160px;
     height: 340px;
-    column-gap: 50px; 
+    column-gap: 50px;
 }
 
-.h5-tabelas-categorias{
+.h5-tabelas-categorias {
     font-weight: 700;
     font-size: 16px;
-    font-family:"Nunito Sans", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     text-align: left;
     padding-left: 25px;
 }
 
 
-.img-dropdown{
+.img-dropdown {
     background-image: url('../img/caneca.png');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 256px;
     height: 320px;
     border-radius: 10px;
@@ -219,34 +230,34 @@
     margin-top: 5px;
 }
 
-.valores-img{
+.valores-img {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   margin-top: 10%;
+    margin-top: 10%;
 }
 
-.h5-tabelas-categorias{
+.h5-tabelas-categorias {
     text-align: left;
     margin-left: 20px;
     margin-top: 20px;
     display: none;
 }
 
-#texto-img{
+#texto-img {
     color: #ffffff;
     font-weight: 400;
     font-size: 30px;
     line-height: 1.7;
-    font-family:"Nunito Sans", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     margin-left: 30px;
 }
 
-#botao-img{
+#botao-img {
     width: 116px;
     height: 38px;
-    border: 1px  solid #FFFFFF;
+    border: 1px solid #FFFFFF;
     border-radius: 12px;
     color: #FFFFFF;
     text-transform: uppercase;
@@ -256,33 +267,35 @@
     margin-top: 5px;
 }
 
-.menu-principal-dropdown{
+.menu-principal-dropdown {
     background-color: #F5F5F5;
     height: 100%;
     width: 254px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around; 
-    gap: -150px;   
-    overflow-y: auto;  /* Habilita o scroll vertical */
-    scrollbar-width: thin; /* Para navegadores compatíveis */
-    scrollbar-color: #CECECE; 
+    justify-content: space-around;
+    gap: -150px;
+    overflow-y: auto;
+    /* Habilita o scroll vertical */
+    scrollbar-width: thin;
+    /* Para navegadores compatíveis */
+    scrollbar-color: #CECECE;
 }
 
 
-.menu-principal-dropdown li:last-child{
+.menu-principal-dropdown li:last-child {
     display: none;
 }
 
-.dropdown-menu ul li{
+.dropdown-menu ul li {
     margin-top: 20px;
     font-weight: 400;
     font-size: 13px;
-    font-family:"Nunito Sans", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
 }
 
 
-#icone-departamento{
+#icone-departamento {
     color: #303030;
     display: flex;
     align-items: center;
@@ -292,11 +305,84 @@
 }
 
 
-#categoria-menu{
+#categoria-menu {
     font-weight: 400;
     font-size: 14px;
-    font-family:"Nunito Sans", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     color: #656565;
     text-align: center;
     line-height: 0.8;
+}
+
+/* .container-banner{
+    padding-top: 148px;
+    position: fixed;
+    width: 100%;
+} */
+
+.container-banner-propaganda{
+    width: 100%;
+    height: 510px;
+    background-color: #E6E7E9;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imagem-banner{
+    width: 685px;
+    height: 510px;
+}
+
+.frases-banner{
+    font-size: 90px;
+    font-weight: 700;
+    font-family: "Nunito Sans", sans-serif;
+    text-transform: uppercase;
+    margin-right: 100px;
+}
+
+#p-editado{
+    font-size: 90px;
+    font-weight: 300;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.desconto-banner{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Nunito Sans", sans-serif;
+    color: #005CFF;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+#valor-desconto{  
+    font-size: 50px;
+    font-weight: 700;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+
+.container-carrossel{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.container-carrossel-pai{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.swiper {
+    
+    width: 600px;
+    margin: auto;
 }
