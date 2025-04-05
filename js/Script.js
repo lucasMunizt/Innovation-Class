@@ -66,10 +66,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
 document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper('.swiper', {
-      loop: true,
-      autoplay: {
-          delay: 3000,
-      },
+    slidesPerView: 1,
+    spaceBetween: 200,  
+    loop: true,
+     
       navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
@@ -78,5 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
           el: '.swiper-pagination',
           clickable: true,
       },
+     
+      
   });
 });

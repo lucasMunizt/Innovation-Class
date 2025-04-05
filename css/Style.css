@@ -5,6 +5,14 @@
     list-style: none;
     text-decoration: none;
 }
+.container-header{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 10001;
+    background-color: #ffffff;
+}
+
 
 .header-promocao p {
     text-align: center;
@@ -320,6 +328,7 @@
     width: 100%;
 } */
 
+
 .container-banner-propaganda{
     width: 100%;
     height: 510px;
@@ -365,24 +374,185 @@
 }
 
 
+.card{
+    width: 250px;
+    height: 450px;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+}
+
+#card-novo{
+
+    color: #ffffff;
+    text-align: center;
+    font-weight: 300;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    width: 41px;
+    height: 22px;
+    margin-left: 10px;
+    position: relative;
+    top: 30px;
+    background-color: #00264E;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+
+.texto-card h3{
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    line-height: 1.4;
+}
+
+.valores-card{
+   text-align: left;
+   margin-left: 10px;
+   margin-top: 10px;
+}
+
+#valor-card-cheio{
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    color: #303030;
+    text-decoration: line-through;
+}
+
+.promocao-card{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.valor-card-promocao{
+  position: relative;
+  top: -10px;
+    
+}
+
+#valor-com-desconto{
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Nunito Sans", sans-serif;
+    color: black;
+}
+
+#valor-card-promocao-p{
+    width: 64px;
+    height: 20px;
+    background-color: #5EC0BE; 
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 4px; 
+    display: inline-block;  
+    text-decoration: underline;
+      
+}
+
 .container-carrossel{
-    display:flex;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 100%;
+
 }
 
 .container-carrossel-pai{
     display: flex;
+    margin:20px 170px 20px;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 40px;
 }
 
 .swiper {
-    
-    width: 600px;
-    margin: auto;
+    width: 1200px;
+  
+}
+
+
+
+.swiper-slide{
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+.swiper-slide img{
+    width: 200px;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    background-color: #ffffff;
+    border: 1px solid #005CFF;
+    border-radius: 50%;
+    padding: 10px;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+}
+
+
+:root {
+    --swiper-navigation-size: 10px !important; /* Ajuste para o tamanho desejado */
+}
+
+
+.section-texto-descrisao{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.conatiner-section-texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 170px;
+}
+
+.caneca-section{
+    background-color: #C2C2C2;
+    width: 650px;
+    height: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.caneca-section img{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-section{
+    /* line-height: 1.9; */
+    padding-left: 40px;    
+    margin-right: 120px;       
+}
+
+.texto-section p{
+    font-weight: 200;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+}
+
+/* #texto-section-principal{
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 18px;
+} */
+
+
+#titulo-texto-section{
+    font-weight: 700;
+    font-size: 30px;
 }
