@@ -13,7 +13,6 @@
     background-color: #ffffff;
 }
 
-
 .header-promocao p {
     text-align: center;
     background-color: #005CFF;
@@ -23,7 +22,6 @@
     font-weight: 700;
     font-size: 14px;
     font-family: "Nunito Sans", sans-serif;
-    ;
 }
 
 #valor-desconto-background {
@@ -42,8 +40,6 @@
     height: 118px;
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
     z-index: 10001;
-   
-    
 }
 
 .header-principal {
@@ -159,7 +155,6 @@
     align-items: center;
     justify-content: space-around;
     gap: 20px;
-
 }
 
 .lista-menu li {
@@ -225,7 +220,6 @@
     padding-left: 25px;
 }
 
-
 .img-dropdown {
     background-image: url('../img/caneca.png');
     background-size: cover;
@@ -284,12 +278,9 @@
     justify-content: space-around;
     gap: -150px;
     overflow-y: auto;
-    /* Habilita o scroll vertical */
     scrollbar-width: thin;
-    /* Para navegadores compatíveis */
     scrollbar-color: #CECECE;
 }
-
 
 .menu-principal-dropdown li:last-child {
     display: none;
@@ -302,7 +293,6 @@
     font-family: "Nunito Sans", sans-serif;
 }
 
-
 #icone-departamento {
     color: #303030;
     display: flex;
@@ -312,7 +302,6 @@
     margin-right: 20px;
 }
 
-
 #categoria-menu {
     font-weight: 400;
     font-size: 14px;
@@ -321,13 +310,6 @@
     text-align: center;
     line-height: 0.8;
 }
-
-/* .container-banner{
-    padding-top: 148px;
-    position: fixed;
-    width: 100%;
-} */
-
 
 .container-banner-propaganda{
     width: 100%;
@@ -366,23 +348,23 @@
     text-transform: uppercase;
 }
 
-
 #valor-desconto{  
     font-size: 50px;
     font-weight: 700;
     font-family: "Nunito Sans", sans-serif;
 }
 
-
 .card{
-    width: 250px;
-    height: 450px;
+    width: 238px;
+    height: 429px;
     border: 1px solid #DDDDDD;
     border-radius: 10px;
+    padding: 10px;
+    margin-left: 0px;
+   
 }
 
 #card-novo{
-
     color: #ffffff;
     text-align: center;
     font-weight: 300;
@@ -391,14 +373,19 @@
     text-transform: uppercase;
     width: 41px;
     height: 22px;
-    margin-left: 10px;
     position: relative;
-    top: 30px;
     background-color: #00264E;
     border-radius: 8px;
     padding: 5px;
 }
 
+.test{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
 
 .texto-card h3{
     font-size: 12px;
@@ -425,14 +412,12 @@
     display: flex;
     justify-content: flex-start;
     gap: 20px;
-    margin-bottom: 20px;
     margin-top: 5px;
 }
 
 .valor-card-promocao{
   position: relative;
   top: -10px;
-    
 }
 
 #valor-com-desconto{
@@ -440,6 +425,21 @@
     font-weight: 700;
     font-family: "Nunito Sans", sans-serif;
     color: black;
+}
+
+#p-parcelamento{
+    color: #303030;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    margin-bottom: 20px;
+}
+
+#span-parcelamento{
+    font-size: 12px;
+    color: black;
+    font-weight: 700;
+    font-family: "Nunito Sans", sans-serif;
 }
 
 #valor-card-promocao-p{
@@ -454,14 +454,24 @@
     border-radius: 4px; 
     display: inline-block;  
     text-decoration: underline;
-      
+}
+
+#botao-card{
+    width: 220px;
+    height: 40px;
+    display: inline-block;
+    color: #ffffff;
+    background-color: #005CFF;
+    margin-left: -10px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;   
 }
 
 .container-carrossel{
     display: flex;
     flex-direction: column;
     width: 100%;
-
 }
 
 .container-carrossel-pai{
@@ -472,11 +482,8 @@
 }
 
 .swiper {
-    width: 1200px;
-  
+    width: 1300px;
 }
-
-
 
 .swiper-slide{
    text-align: center;
@@ -498,10 +505,10 @@
 }
 
 
-:root {
-    --swiper-navigation-size: 10px !important; /* Ajuste para o tamanho desejado */
-}
 
+:root {
+    --swiper-navigation-size: 10px !important;
+}
 
 .section-texto-descrisao{
     margin-top: 40px;
@@ -534,7 +541,6 @@
 }
 
 .texto-section{
-    /* line-height: 1.9; */
     padding-left: 40px;    
     margin-right: 120px;       
 }
@@ -545,14 +551,76 @@
     font-size: 18px;
 }
 
-/* #texto-section-principal{
-    font-weight: 400;
-    font-family: "Nunito Sans", sans-serif;
-    font-size: 18px;
-} */
-
-
 #titulo-texto-section{
     font-weight: 700;
     font-size: 30px;
+}
+
+.container-segunda-section{
+    display: flex;
+    width: 100%;
+    background-color: #DEDEDE;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: "Nunito Sans", sans-serif;
+    height: 567px;
+}
+
+.texto-segunda-section h4{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #4F4F4F;
+    font-size: 30px; 
+    font-weight: 700;   
+}
+
+.texto-icone-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.texto-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 20px;
+    font-family: "Nunito Sans", sans-serif;
+    color: #4F4F4F;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+#img-section{
+    margin-right: 100px;
+    width: 450px;
+    height: 520px;
+    margin-left: 20px;
+}
+
+#icone-texto{
+    background-color: #005CFF;
+    width: 90px;
+    height: 90px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#icone-texto img{
+    width: 10px;
+    height: 10px;
+}
+
+.segunda-section-carrossel{
+    margin-top: 60px;
 }
