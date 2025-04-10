@@ -624,3 +624,179 @@
 .segunda-section-carrossel{
     margin-top: 60px;
 }
+
+.container-papelParede{
+    margin-top: 40px;
+    width: 100%;
+    height: 660px;
+    background-image: url('../img/papelParede.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#texto-papelParede{
+    background-color: #005CFF;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.container-formulario{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.container-formulario h4{
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#texto-formualrio{
+  color: rgb(0, 92, 255);
+}
+
+.formulario{
+    margin-top: 20px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    background-color: #DEDEDE;
+    width: 100%;
+    height: 175px;
+}
+
+#input-formulario{
+    width: 280px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+}
+
+#input-formulario::placeholder{
+    color: #303030;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.chekbox-formulario{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+form p{
+    color: #656565;
+    font-weight: 700;
+    font-size: 12px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+#butao-formulario{
+    width: 120px;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    background-color: #005CFF;
+    color: #ffffff;
+}
+
+.footer-informacoes{
+    width: 100%;
+    height: 386px;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.logo-icone-rede-sociais{
+    margin-top: 60px;  
+    margin-left: 100px; 
+}
+
+.icones-rede-sociais{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.lista-informacoes{
+  display: flex;
+  margin-top: 60px;
+  gap: 80px;
+  justify-content: center;
+
+}
+
+.instituicao,.central-ajudas,.atendimentos{
+    line-height: 1.9;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.lista-informacoes h4{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.lista-informacoes h5{
+    color: #303030;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#categoria-atendimento{
+    font-weight: 700;
+    color: black;
+}
+
+.container-cartao {
+    position: relative;
+    top: 70%;
+    width: 0;
+    height: 0;
+    right: 65%;
+}
+
+#imagem-cartao{
+   width: 500px;
+}
+
+.footer-texto{
+    text-align: center;
+    width: 100%;
+    padding: 40px;
+    line-height: 1.4;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #303030;
+}
+
+#marcas-footer{
+    margin-top: 20px;
+}
