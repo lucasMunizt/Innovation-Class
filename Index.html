@@ -31,12 +31,18 @@
         <div class="home-menu">
             <div class="header-principal">
                 <div class="primeira-secao">
-                    <img src="./img/logoAvanti.png" alt="logo escrita Avanti">
-                    <div class="campo-busca">
+                    <i class="material-symbols-outlined" id="menu-icone-mobile">menu</i>
+                    <img src="./img/logoAvanti.png" alt="logo escrita Avanti" id="logo-header">
+                    <div class="campo-busca" id="campo-busca-desktop">
                         <input type="text" placeholder="Digite aqui o que você procura" id="input-busca">
                         <img src="./img/iconeBuca.png" alt="icone que representa a busca" id="icone-busca">
                     </div>
+                    <div class="carrinho-compras" id="menu-carrinho-mobile">
+                        <img src="./img/carrinho.png" alt="">
+                        <span id="quantidades-compras">2</span>
+                    </div>
                 </div>
+                
 
                 <div class="segunda-secao">
 
@@ -51,10 +57,14 @@
                     </div>
                 </div>
 
-
             </div>
+            <div id="resultado-busca"></div>
 
             <div class="header-menu">
+                <div class="campo-busca" id="campo-busca-mobile">
+                    <input type="text" placeholder="Digite aqui o que você procura" id="input-busca-mobile">
+                    <img src="./img/iconeBuca.png" alt="icone que representa a busca" id="icone-busca">
+                </div>
                 <ul class="lista-menu">
                     <li id="todas-categorias">
                         <i class="material-symbols-outlined">menu</i>Todas as Categorias
@@ -163,8 +173,7 @@
                 <img src="./img/cadeira.png" alt="imagem de uma cadeira">
             </div>
             <div class="frases-banner">
-                 <p>super<span id="p-editado">sale</span></p> 
-                 
+                <p id="primeiro-p">super<span id="p-editado">sale</span></p>
                  <div class="desconto-banner">
                      <p id="texto-principal">itens selecionados com até <p id="valor-desconto">50%off</p></p>
                  </div>
@@ -180,7 +189,7 @@
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="test">
+                        <div class="container-swiper-pai">
                             <div class="card">
                                 <p id="card-novo">novo</p>
                                 
@@ -202,7 +211,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+
+                            <div class="card" id="card-desativado-mobile">
                                 <p id="card-novo">novo</p>
                                 
                                 <img src="./img/modelo-card.png" alt="Imagem 1">
@@ -222,7 +232,9 @@
                                         <button id="botao-card">Comprar</button>
                                     </div>
                                 </div>
-                            </div>  <div class="card">
+                            </div> 
+
+                             <div class="card">
                                 <p id="card-novo">novo</p>
                                 
                                 <img src="./img/modelo-card.png" alt="Imagem 1">
@@ -242,7 +254,8 @@
                                         <button id="botao-card">Comprar</button>
                                     </div>
                                 </div>
-                            </div>  <div class="card">
+                            </div>  
+                            <div class="card" id="card-desativado">
                                 <p id="card-novo">novo</p>
                                 
                                 <img src="./img/modelo-card.png" alt="Imagem 1">
@@ -262,7 +275,8 @@
                                         <button id="botao-card">Comprar</button>
                                     </div>
                                 </div>
-                            </div>  <div class="card">
+                            </div> 
+                             <div class="card" id="card-desativado">
                                 <p id="card-novo">novo</p>
                                 
                                 <img src="./img/modelo-card.png" alt="Imagem 1">
@@ -289,7 +303,7 @@
                     </div>
                     <div class="swiper-slide">
                       
-                        <div class="test">
+                        <div class="container-swiper-pai">
                             <div class="card">
                                 <p id="card-novo">novo</p>
                                 
@@ -331,7 +345,9 @@
                                         <button id="botao-card">Comprar</button>
                                     </div>
                                 </div>
-                            </div>  <div class="card">
+                            </div> 
+
+                             <div class="card" id="card-desativado-mobile">
                                 <p id="card-novo">novo</p>
                                 
                                 <img src="./img/modelo-card.png" alt="Imagem 1">
@@ -351,7 +367,8 @@
                                         <button id="botao-card">Comprar</button>
                                     </div>
                                 </div>
-                            </div>  <div class="card">
+                            </div> 
+                             <div class="card" id="card-desativado">
                                 <p id="card-novo">novo</p>
                                 
                                 <img src="./img/modelo-card.png" alt="Imagem 1">
@@ -371,7 +388,8 @@
                                         <button id="botao-card">Comprar</button>
                                     </div>
                                 </div>
-                            </div>  <div class="card">
+                            </div> 
+                             <div class="card" id="card-desativado">
                                 <p id="card-novo">novo</p>
                                 
                                 <img src="./img/modelo-card.png" alt="Imagem 1">
@@ -397,7 +415,7 @@
                      
                     </div>
                     <div class="swiper-slide">
-                        <div class="test">
+                        <div class="container-swiper-pai">
                             <div class="card">
                                 <p id="card-novo">novo</p>
                                 
@@ -439,7 +457,7 @@
                                         <button id="botao-card">Comprar</button>
                                     </div>
                                 </div>
-                            </div>  <div class="card">
+                            </div>  <div class="card" id="card-desativado-mobile">
                                 <p id="card-novo">novo</p>
                                 
                                 <img src="./img/modelo-card.png" alt="Imagem 1">
@@ -459,7 +477,8 @@
                                         <button id="botao-card">Comprar</button>
                                     </div>
                                 </div>
-                            </div>  <div class="card">
+                            </div> 
+                             <div class="card" id="card-desativado">
                                 <p id="card-novo">novo</p>
                                 
                                 <img src="./img/modelo-card.png" alt="Imagem 1">
@@ -479,7 +498,8 @@
                                         <button id="botao-card">Comprar</button>
                                     </div>
                                 </div>
-                            </div>  <div class="card">
+                            </div>  
+                            <div class="card" id="card-desativado">
                                 <p id="card-novo">novo</p>
                                 
                                 <img src="./img/modelo-card.png" alt="Imagem 1">
@@ -606,347 +626,358 @@
             </div>
         </div>
        <div class="segunda-section-carrossel">
-        <div class="carrossel">
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="test">
-                            <div class="card">
-                                <p id="card-novo">novo</p>
-                                
-                                <img src="./img/modelo-card.png" alt="Imagem 1">
-                                <div class="texto-card">
-                                    <h3>
-                                     Lorem ipsum dolor sit amet consectetuer adipiscing elit 
-                                    </h3>
-                                    <div class="valores-card">
-                                        <p id="valor-card-cheio">R$ 100.00</p>
-                                        <div class="promocao-card">
-                                            <p id="valor-com-desconto">R$ 79,90</p>
-                                            <div class="valor-card-promocao">
-                                                <p id="valor-card-promocao-p">10% OFF</p>
+            <div class="carrossel">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="container-swiper-pai">
+                                <div class="card">
+                                    <p id="card-novo">novo</p>
+                                    
+                                    <img src="./img/modelo-card.png" alt="Imagem 1">
+                                    <div class="texto-card">
+                                        <h3>
+                                        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+                                        </h3>
+                                        <div class="valores-card">
+                                            <p id="valor-card-cheio">R$ 100.00</p>
+                                            <div class="promocao-card">
+                                                <p id="valor-com-desconto">R$ 79,90</p>
+                                                <div class="valor-card-promocao">
+                                                    <p id="valor-card-promocao-p">10% OFF</p>
+                                                </div>
                                             </div>
+                                            <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
+                                            <button id="botao-card">Comprar</button>
                                         </div>
-                                        <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
-                                        <button id="botao-card">Comprar</button>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card">
-                                <p id="card-novo">novo</p>
-                                
-                                <img src="./img/modelo-card.png" alt="Imagem 1">
-                                <div class="texto-card">
-                                    <h3>
-                                     Lorem ipsum dolor sit amet consectetuer adipiscing elit 
-                                    </h3>
-                                    <div class="valores-card">
-                                        <p id="valor-card-cheio">R$ 100.00</p>
-                                        <div class="promocao-card">
-                                            <p id="valor-com-desconto">R$ 79,90</p>
-                                            <div class="valor-card-promocao">
-                                                <p id="valor-card-promocao-p">10% OFF</p>
-                                            </div>
-                                        </div>
-                                        <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
-                                        <button id="botao-card">Comprar</button>
-                                    </div>
-                                </div>
-                            </div>  <div class="card">
-                                <p id="card-novo">novo</p>
-                                
-                                <img src="./img/modelo-card.png" alt="Imagem 1">
-                                <div class="texto-card">
-                                    <h3>
-                                     Lorem ipsum dolor sit amet consectetuer adipiscing elit 
-                                    </h3>
-                                    <div class="valores-card">
-                                        <p id="valor-card-cheio">R$ 100.00</p>
-                                        <div class="promocao-card">
-                                            <p id="valor-com-desconto">R$ 79,90</p>
-                                            <div class="valor-card-promocao">
-                                                <p id="valor-card-promocao-p">10% OFF</p>
-                                            </div>
-                                        </div>
-                                        <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
-                                        <button id="botao-card">Comprar</button>
-                                    </div>
-                                </div>
-                            </div>  <div class="card">
-                                <p id="card-novo">novo</p>
-                                
-                                <img src="./img/modelo-card.png" alt="Imagem 1">
-                                <div class="texto-card">
-                                    <h3>
-                                     Lorem ipsum dolor sit amet consectetuer adipiscing elit 
-                                    </h3>
-                                    <div class="valores-card">
-                                        <p id="valor-card-cheio">R$ 100.00</p>
-                                        <div class="promocao-card">
-                                            <p id="valor-com-desconto">R$ 79,90</p>
-                                            <div class="valor-card-promocao">
-                                                <p id="valor-card-promocao-p">10% OFF</p>
-                                            </div>
-                                        </div>
-                                        <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
-                                        <button id="botao-card">Comprar</button>
-                                    </div>
-                                </div>
-                            </div>  <div class="card">
-                                <p id="card-novo">novo</p>
-                                
-                                <img src="./img/modelo-card.png" alt="Imagem 1">
-                                <div class="texto-card">
-                                    <h3>
-                                     Lorem ipsum dolor sit amet consectetuer adipiscing elit 
-                                    </h3>
-                                    <div class="valores-card">
-                                        <p id="valor-card-cheio">R$ 100.00</p>
-                                        <div class="promocao-card">
-                                            <p id="valor-com-desconto">R$ 79,90</p>
-                                            <div class="valor-card-promocao">
-                                                <p id="valor-card-promocao-p">10% OFF</p>
-                                            </div>
-                                        </div>
-                                        <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
-                                        <button id="botao-card">Comprar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                     
-                    </div>
-                    <div class="swiper-slide">
-                      
-                        <div class="test">
-                            <div class="card">
-                                <p id="card-novo">novo</p>
-                                
-                                <img src="./img/modelo-card.png" alt="Imagem 1">
-                                <div class="texto-card">
-                                    <h3>
-                                     Lorem ipsum dolor sit amet consectetuer adipiscing elit  
-                                    </h3>
-                                    <div class="valores-card">
-                                        <p id="valor-card-cheio">R$ 100.00</p>
-                                        <div class="promocao-card">
-                                            <p id="valor-com-desconto">R$ 79,90</p>
-                                            <div class="valor-card-promocao">
-                                                <p id="valor-card-promocao-p">10% OFF</p>
-                                            </div>
-                                        </div>
-                                        <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
-                                        <button id="botao-card">Comprar</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <p id="card-novo">novo</p>
-                                
-                                <img src="./img/modelo-card.png" alt="Imagem 1">
-                                <div class="texto-card">
-                                    <h3>
-                                     Lorem ipsum dolor sit amet consectetuer adipiscing elit 
-                                    </h3>
-                                    <div class="valores-card">
-                                        <p id="valor-card-cheio">R$ 100.00</p>
-                                        <div class="promocao-card">
-                                            <p id="valor-com-desconto">R$ 79,90</p>
-                                            <div class="valor-card-promocao">
-                                                <p id="valor-card-promocao-p">10% OFF</p>
-                                            </div>
-                                        </div>
-                                        <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
-                                        <button id="botao-card">Comprar</button>
-                                    </div>
-                                </div>
-                            </div>  <div class="card">
-                                <p id="card-novo">novo</p>
-                                
-                                <img src="./img/modelo-card.png" alt="Imagem 1">
-                                <div class="texto-card">
-                                    <h3>
-                                     Lorem ipsum dolor sit amet consectetuer adipiscing elit 
-                                    </h3>
-                                    <div class="valores-card">
-                                        <p id="valor-card-cheio">R$ 100.00</p>
-                                        <div class="promocao-card">
-                                            <p id="valor-com-desconto">R$ 79,90</p>
-                                            <div class="valor-card-promocao">
-                                                <p id="valor-card-promocao-p">10% OFF</p>
-                                            </div>
-                                        </div>
-                                        <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
-                                        <button id="botao-card">Comprar</button>
-                                    </div>
-                                </div>
-                            </div>  <div class="card">
-                                <p id="card-novo">novo</p>
-                                
-                                <img src="./img/modelo-card.png" alt="Imagem 1">
-                                <div class="texto-card">
-                                    <h3>
-                                     Lorem ipsum dolor sit amet consectetuer adipiscing elit 
-                                    </h3>
-                                    <div class="valores-card">
-                                        <p id="valor-card-cheio">R$ 100.00</p>
-                                        <div class="promocao-card">
-                                            <p id="valor-com-desconto">R$ 79,90</p>
-                                            <div class="valor-card-promocao">
-                                                <p id="valor-card-promocao-p">10% OFF</p>
-                                            </div>
-                                        </div>
-                                        <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
-                                        <button id="botao-card">Comprar</button>
-                                    </div>
-                                </div>
-                            </div>  <div class="card">
-                                <p id="card-novo">novo</p>
-                                
-                                <img src="./img/modelo-card.png" alt="Imagem 1">
-                                <div class="texto-card">
-                                    <h3>
-                                     Lorem ipsum dolor sit amet consectetuer adipiscing elit 
-                                    </h3>
-                                    <div class="valores-card">
-                                        <p id="valor-card-cheio">R$ 100.00</p>
-                                        <div class="promocao-card">
-                                            <p id="valor-com-desconto">R$ 79,90</p>
-                                            <div class="valor-card-promocao">
-                                                <p id="valor-card-promocao-p">10% OFF</p>
-                                            </div>
-                                        </div>
-                                        <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
-                                        <button id="botao-card">Comprar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                     
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="test">
-                            <div class="card">
-                                <p id="card-novo">novo</p>
-                                
-                                <img src="./img/modelo-card.png" alt="Imagem 1">
-                                <div class="texto-card">
-                                    <h3>
-                                     Lorem ipsum dolor sit amet consectetuer adipiscing elit 
-                                    </h3>
-                                    <div class="valores-card">
-                                        <p id="valor-card-cheio">R$ 100.00</p>
-                                        <div class="promocao-card">
-                                            <p id="valor-com-desconto">R$ 79,90</p>
-                                            <div class="valor-card-promocao">
-                                                <p id="valor-card-promocao-p">10% OFF</p>
-                                            </div>
-                                        </div>
-                                        <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
-                                        <button id="botao-card">Comprar</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <p id="card-novo">novo</p>
-                                
-                                <img src="./img/modelo-card.png" alt="Imagem 1">
-                                <div class="texto-card">
-                                    <h3>
-                                     Lorem ipsum dolor sit amet consectetuer adipiscing elit  
-                                    </h3>
-                                    <div class="valores-card">
-                                        <p id="valor-card-cheio">R$ 100.00</p>
-                                        <div class="promocao-card">
-                                            <p id="valor-com-desconto">R$ 79,90</p>
-                                            <div class="valor-card-promocao">
-                                                <p id="valor-card-promocao-p">10% OFF</p>
-                                            </div>
-                                        </div>
-                                        <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
-                                        <button id="botao-card">Comprar</button>
-                                    </div>
-                                </div>
-                            </div>  <div class="card">
-                                <p id="card-novo">novo</p>
-                                
-                                <img src="./img/modelo-card.png" alt="Imagem 1">
-                                <div class="texto-card">
-                                    <h3>
-                                     Lorem ipsum dolor sit amet consectetuer adipiscing elit 
-                                    </h3>
-                                    <div class="valores-card">
-                                        <p id="valor-card-cheio">R$ 100.00</p>
-                                        <div class="promocao-card">
-                                            <p id="valor-com-desconto">R$ 79,90</p>
-                                            <div class="valor-card-promocao">
-                                                <p id="valor-card-promocao-p">10% OFF</p>
-                                            </div>
-                                        </div>
-                                        <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
-                                        <button id="botao-card">Comprar</button>
-                                    </div>
-                                </div>
-                            </div>  <div class="card">
-                                <p id="card-novo">novo</p>
-                                
-                                <img src="./img/modelo-card.png" alt="Imagem 1">
-                                <div class="texto-card">
-                                    <h3>
-                                     Lorem ipsum dolor sit amet consectetuer adipiscing elit  
-                                    </h3>
-                                    <div class="valores-card">
-                                        <p id="valor-card-cheio">R$ 100.00</p>
-                                        <div class="promocao-card">
-                                            <p id="valor-com-desconto">R$ 79,90</p>
-                                            <div class="valor-card-promocao">
-                                                <p id="valor-card-promocao-p">10% OFF</p>
-                                            </div>
-                                        </div>
-                                        <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
-                                        <button id="botao-card">Comprar</button>
-                                    </div>
-                                </div>
-                            </div>  <div class="card">
-                                <p id="card-novo">novo</p>
-                                
-                                <img src="./img/modelo-card.png" alt="Imagem 1">
-                                <div class="texto-card">
-                                    <h3>
-                                     Lorem ipsum dolor sit amet consectetuer adipiscing elit 
-                                    </h3>
-                                    <div class="valores-card">
-                                        <p id="valor-card-cheio">R$ 100.00</p>
-                                        <div class="promocao-card">
-                                            <p id="valor-com-desconto">R$ 79,90</p>
-                                            <div class="valor-card-promocao">
-                                                <p id="valor-card-promocao-p">10% OFF</p>
-                                            </div>
-                                        </div>
-                                        <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
-                                        <button id="botao-card">Comprar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                     
-                    </div>
-                </div>
-            
-                <!-- Botões de navegação -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            
-                <!-- Paginação -->
-                <div class="swiper-pagination"></div>
-            </div>
-  
-        </div>
-       </div>
 
+                                <div class="card" id="card-desativado-mobile">
+                                    <p id="card-novo">novo</p>
+                                    
+                                    <img src="./img/modelo-card.png" alt="Imagem 1">
+                                    <div class="texto-card">
+                                        <h3>
+                                        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+                                        </h3>
+                                        <div class="valores-card">
+                                            <p id="valor-card-cheio">R$ 100.00</p>
+                                            <div class="promocao-card">
+                                                <p id="valor-com-desconto">R$ 79,90</p>
+                                                <div class="valor-card-promocao">
+                                                    <p id="valor-card-promocao-p">10% OFF</p>
+                                                </div>
+                                            </div>
+                                            <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
+                                            <button id="botao-card">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div> 
+
+                                <div class="card">
+                                    <p id="card-novo">novo</p>
+                                    
+                                    <img src="./img/modelo-card.png" alt="Imagem 1">
+                                    <div class="texto-card">
+                                        <h3>
+                                        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+                                        </h3>
+                                        <div class="valores-card">
+                                            <p id="valor-card-cheio">R$ 100.00</p>
+                                            <div class="promocao-card">
+                                                <p id="valor-com-desconto">R$ 79,90</p>
+                                                <div class="valor-card-promocao">
+                                                    <p id="valor-card-promocao-p">10% OFF</p>
+                                                </div>
+                                            </div>
+                                            <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
+                                            <button id="botao-card">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>  
+                                <div class="card" id="card-desativado">
+                                    <p id="card-novo">novo</p>
+                                    
+                                    <img src="./img/modelo-card.png" alt="Imagem 1">
+                                    <div class="texto-card">
+                                        <h3>
+                                        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+                                        </h3>
+                                        <div class="valores-card">
+                                            <p id="valor-card-cheio">R$ 100.00</p>
+                                            <div class="promocao-card">
+                                                <p id="valor-com-desconto">R$ 79,90</p>
+                                                <div class="valor-card-promocao">
+                                                    <p id="valor-card-promocao-p">10% OFF</p>
+                                                </div>
+                                            </div>
+                                            <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
+                                            <button id="botao-card">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="card" id="card-desativado">
+                                    <p id="card-novo">novo</p>
+                                    
+                                    <img src="./img/modelo-card.png" alt="Imagem 1">
+                                    <div class="texto-card">
+                                        <h3>
+                                        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+                                        </h3>
+                                        <div class="valores-card">
+                                            <p id="valor-card-cheio">R$ 100.00</p>
+                                            <div class="promocao-card">
+                                                <p id="valor-com-desconto">R$ 79,90</p>
+                                                <div class="valor-card-promocao">
+                                                    <p id="valor-card-promocao-p">10% OFF</p>
+                                                </div>
+                                            </div>
+                                            <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
+                                            <button id="botao-card">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        
+                        </div>
+                        <div class="swiper-slide">
+                        
+                            <div class="container-swiper-pai">
+                                <div class="card">
+                                    <p id="card-novo">novo</p>
+                                    
+                                    <img src="./img/modelo-card.png" alt="Imagem 1">
+                                    <div class="texto-card">
+                                        <h3>
+                                        Lorem ipsum dolor sit amet consectetuer adipiscing elit  
+                                        </h3>
+                                        <div class="valores-card">
+                                            <p id="valor-card-cheio">R$ 100.00</p>
+                                            <div class="promocao-card">
+                                                <p id="valor-com-desconto">R$ 79,90</p>
+                                                <div class="valor-card-promocao">
+                                                    <p id="valor-card-promocao-p">10% OFF</p>
+                                                </div>
+                                            </div>
+                                            <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
+                                            <button id="botao-card">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <p id="card-novo">novo</p>
+                                    
+                                    <img src="./img/modelo-card.png" alt="Imagem 1">
+                                    <div class="texto-card">
+                                        <h3>
+                                        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+                                        </h3>
+                                        <div class="valores-card">
+                                            <p id="valor-card-cheio">R$ 100.00</p>
+                                            <div class="promocao-card">
+                                                <p id="valor-com-desconto">R$ 79,90</p>
+                                                <div class="valor-card-promocao">
+                                                    <p id="valor-card-promocao-p">10% OFF</p>
+                                                </div>
+                                            </div>
+                                            <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
+                                            <button id="botao-card">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div> 
+
+                                <div class="card" id="card-desativado-mobile">
+                                    <p id="card-novo">novo</p>
+                                    
+                                    <img src="./img/modelo-card.png" alt="Imagem 1">
+                                    <div class="texto-card">
+                                        <h3>
+                                        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+                                        </h3>
+                                        <div class="valores-card">
+                                            <p id="valor-card-cheio">R$ 100.00</p>
+                                            <div class="promocao-card">
+                                                <p id="valor-com-desconto">R$ 79,90</p>
+                                                <div class="valor-card-promocao">
+                                                    <p id="valor-card-promocao-p">10% OFF</p>
+                                                </div>
+                                            </div>
+                                            <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
+                                            <button id="botao-card">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="card" id="card-desativado">
+                                    <p id="card-novo">novo</p>
+                                    
+                                    <img src="./img/modelo-card.png" alt="Imagem 1">
+                                    <div class="texto-card">
+                                        <h3>
+                                        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+                                        </h3>
+                                        <div class="valores-card">
+                                            <p id="valor-card-cheio">R$ 100.00</p>
+                                            <div class="promocao-card">
+                                                <p id="valor-com-desconto">R$ 79,90</p>
+                                                <div class="valor-card-promocao">
+                                                    <p id="valor-card-promocao-p">10% OFF</p>
+                                                </div>
+                                            </div>
+                                            <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
+                                            <button id="botao-card">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="card" id="card-desativado">
+                                    <p id="card-novo">novo</p>
+                                    
+                                    <img src="./img/modelo-card.png" alt="Imagem 1">
+                                    <div class="texto-card">
+                                        <h3>
+                                        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+                                        </h3>
+                                        <div class="valores-card">
+                                            <p id="valor-card-cheio">R$ 100.00</p>
+                                            <div class="promocao-card">
+                                                <p id="valor-com-desconto">R$ 79,90</p>
+                                                <div class="valor-card-promocao">
+                                                    <p id="valor-card-promocao-p">10% OFF</p>
+                                                </div>
+                                            </div>
+                                            <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
+                                            <button id="botao-card">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="container-swiper-pai">
+                                <div class="card">
+                                    <p id="card-novo">novo</p>
+                                    
+                                    <img src="./img/modelo-card.png" alt="Imagem 1">
+                                    <div class="texto-card">
+                                        <h3>
+                                        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+                                        </h3>
+                                        <div class="valores-card">
+                                            <p id="valor-card-cheio">R$ 100.00</p>
+                                            <div class="promocao-card">
+                                                <p id="valor-com-desconto">R$ 79,90</p>
+                                                <div class="valor-card-promocao">
+                                                    <p id="valor-card-promocao-p">10% OFF</p>
+                                                </div>
+                                            </div>
+                                            <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
+                                            <button id="botao-card">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <p id="card-novo">novo</p>
+                                    
+                                    <img src="./img/modelo-card.png" alt="Imagem 1">
+                                    <div class="texto-card">
+                                        <h3>
+                                        Lorem ipsum dolor sit amet consectetuer adipiscing elit  
+                                        </h3>
+                                        <div class="valores-card">
+                                            <p id="valor-card-cheio">R$ 100.00</p>
+                                            <div class="promocao-card">
+                                                <p id="valor-com-desconto">R$ 79,90</p>
+                                                <div class="valor-card-promocao">
+                                                    <p id="valor-card-promocao-p">10% OFF</p>
+                                                </div>
+                                            </div>
+                                            <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
+                                            <button id="botao-card">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>  <div class="card" id="card-desativado-mobile">
+                                    <p id="card-novo">novo</p>
+                                    
+                                    <img src="./img/modelo-card.png" alt="Imagem 1">
+                                    <div class="texto-card">
+                                        <h3>
+                                        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+                                        </h3>
+                                        <div class="valores-card">
+                                            <p id="valor-card-cheio">R$ 100.00</p>
+                                            <div class="promocao-card">
+                                                <p id="valor-com-desconto">R$ 79,90</p>
+                                                <div class="valor-card-promocao">
+                                                    <p id="valor-card-promocao-p">10% OFF</p>
+                                                </div>
+                                            </div>
+                                            <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
+                                            <button id="botao-card">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="card" id="card-desativado">
+                                    <p id="card-novo">novo</p>
+                                    
+                                    <img src="./img/modelo-card.png" alt="Imagem 1">
+                                    <div class="texto-card">
+                                        <h3>
+                                        Lorem ipsum dolor sit amet consectetuer adipiscing elit  
+                                        </h3>
+                                        <div class="valores-card">
+                                            <p id="valor-card-cheio">R$ 100.00</p>
+                                            <div class="promocao-card">
+                                                <p id="valor-com-desconto">R$ 79,90</p>
+                                                <div class="valor-card-promocao">
+                                                    <p id="valor-card-promocao-p">10% OFF</p>
+                                                </div>
+                                            </div>
+                                            <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
+                                            <button id="botao-card">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>  
+                                <div class="card" id="card-desativado">
+                                    <p id="card-novo">novo</p>
+                                    
+                                    <img src="./img/modelo-card.png" alt="Imagem 1">
+                                    <div class="texto-card">
+                                        <h3>
+                                        Lorem ipsum dolor sit amet consectetuer adipiscing elit 
+                                        </h3>
+                                        <div class="valores-card">
+                                            <p id="valor-card-cheio">R$ 100.00</p>
+                                            <div class="promocao-card">
+                                                <p id="valor-com-desconto">R$ 79,90</p>
+                                                <div class="valor-card-promocao">
+                                                    <p id="valor-card-promocao-p">10% OFF</p>
+                                                </div>
+                                            </div>
+                                            <p id="p-parcelamento">Ou em até <span id="span-parcelamento">10x de R$ 7,90</span></p>
+                                            <button id="botao-card">Comprar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        
+                        </div>
+                    </div>
+                
+                    <!-- Botões de navegação -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                
+                    <!-- Paginação -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                
+                
+            </div>
+        </div>
     </section>
 
     <section>
@@ -976,12 +1007,12 @@
 <footer>
     <div class="footer-informacoes">
             <div class="logo-icone-rede-sociais">
-                <img src="./img/logoAvanti.png" alt="logo escrita avanti">
+                <img src="./img/logoAvanti.png" alt="logo escrita avanti" id="logo-footer">
                 <div class="icones-rede-sociais">
-                    <img src="./img/instagram.png" alt="logo instagram">
-                    <img src="./img/facebook.png" alt="logo facebook">
-                    <img src="./img/youtube.png" alt="logo youtube">
-                    <img src="./img/logo-tiktok-svgrepo-com.png" alt="logo tiktok">
+                    <img src="./img/instagram.png" alt="logo instagram" id="icone-footer">
+                    <img src="./img/facebook.png" alt="logo facebook" id="icone-footer">
+                    <img src="./img/youtube.png" alt="logo youtube" id="icone-footer">
+                    <img src="./img/logo-tiktok-svgrepo-com.png" alt="logo tiktok" id="icone-footer">
                 </div>
             </div>
             <div class="lista-informacoes">

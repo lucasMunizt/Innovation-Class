@@ -1,14 +1,17 @@
+const todasCategorias = document.getElementById("todas-categorias");
+const departamentoDropdown = document.getElementById("departamento-dropdown");
+const dropdownMenu = document.querySelector(".container-dropdown");
+const categoria = document.querySelectorAll("#categoria-menu");
+const primeiroCategoria = document.querySelectorAll(".primeiro-categoria");
+const menuPrincipalDropdown = document.querySelector(".menu-principal-dropdown");
+const dropdowMenu = document.querySelector(".dropdown-menu"); 
+const textoDepartamento = document.querySelector(".h5-tabelas-categorias");
+const tabelasCategorias = document.querySelectorAll(".tabelas-categorias");
+const imgDropdown  =  document.querySelector(".img-dropdown");
+const botaoBusca = document.getElementById("icone-busca");
+const inputBusca = document.getElementById("input-busca");
+const resultadoBusca = document.getElementById("resultado-busca");
 document.addEventListener("DOMContentLoaded", function() {
-  const todasCategorias = document.getElementById("todas-categorias");
-  const departamentoDropdown = document.getElementById("departamento-dropdown");
-  const dropdownMenu = document.querySelector(".container-dropdown");
-  const categoria = document.querySelectorAll("#categoria-menu");
-  const primeiroCategoria = document.querySelectorAll(".primeiro-categoria");
-  const menuPrincipalDropdown = document.querySelector(".menu-principal-dropdown");
-  const dropdowMenu = document.querySelector(".dropdown-menu"); 
-  const textoDepartamento = document.querySelector(".h5-tabelas-categorias");
-  const tabelasCategorias = document.querySelectorAll(".tabelas-categorias");
-  const imgDropdown  =  document.querySelector(".img-dropdown");
   function mostrarDropdown() {
       dropdownMenu.style.display = "block";
       primeiroCategoria.forEach(item=>{
@@ -62,5 +65,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
   dropdownMenu.addEventListener("mouseleave", esconderDropdown);
+});
+
+botaoBusca.addEventListener("click",()=>{
+  const valorBusca = inputBusca.value.trim();
+
+  if(valorBusca != ""){
+    resultadoBusca.textContent = `Você buscou por: '${valorBusca}'`;
+  }else{
+    resultadoBusca.textContent = '';
+  }
 });
 

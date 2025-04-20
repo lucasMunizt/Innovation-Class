@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const cardDesativado = document.querySelectorAll('#card-desativado');
+  const containerPaiSlide = document.querySelector('.test');
     const swiper = new Swiper('.swiper', {
       slidesPerView: 1,
       spaceBetween: 1,   //100
@@ -12,7 +14,17 @@ document.addEventListener("DOMContentLoaded", function () {
             el: '.swiper-pagination',
             clickable: true,
         },
-       
-        
+        breakpoints: {
+          560: {
+            slidesPerView: 1, 
+            spaceBetween: 200,
+          },
+
+          460:{
+            slidesPerView: 1, 
+            spaceBetween: 1200,
+          }
+        }
     });
+ 
   });
