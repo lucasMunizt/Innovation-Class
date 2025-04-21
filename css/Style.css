@@ -11,12 +11,17 @@ html, body {
     overflow-x: hidden;
   }
 
+  header{
+    margin-bottom:100px ;
+  }
+  
 .container-header{
     position: fixed;
     top: 0%;
     width: 100%;
     z-index: 10001;
     background-color: #ffffff;
+  
 }
 
 .header-promocao p {
@@ -48,7 +53,6 @@ html, body {
     max-width: 1920px;
     width: 100%;
     height: 118px;
-    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
     z-index: 10001;
 }
 
@@ -212,13 +216,13 @@ html, body {
         'opsz' 20
 }
 
-.container-dropdown {
+.container-modal {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     margin-top: 2px;
     width: max-content;
-    left: 85%;
+    left:85%; /*85*/
     transform: translateX(-85%); 
     z-index: 10001;
     position: absolute;
@@ -234,7 +238,7 @@ html, body {
     color: #005CFF;
 }
 
-.dropdown-menu {
+.modal-menu {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
@@ -242,6 +246,7 @@ html, body {
     height: 340px;
     column-gap: 50px;
 }
+
 
 .h5-tabelas-categorias {
     font-weight: 700;
@@ -251,7 +256,7 @@ html, body {
     padding-left: 25px;
 }
 
-.img-dropdown {
+.img-modal {
     background-image: url('../img/caneca.png');
     background-size: cover;
     background-position: center;
@@ -259,8 +264,9 @@ html, body {
     width: 256px;
     height: 320px;
     border-radius: 10px;
-    margin-right: 50px;
+    margin-right: 0px;
     margin-top: 5px;
+    padding-right: 40px;
 }
 
 .valores-img {
@@ -275,7 +281,6 @@ html, body {
     text-align: left;
     margin-left: 20px;
     margin-top: 20px;
-    display: none;
 }
 
 #texto-img {
@@ -300,7 +305,7 @@ html, body {
     margin-top: 5px;
 }
 
-.menu-principal-dropdown {
+.menu-principal-modal {
     background-color: #F5F5F5;
     height: 100%;
     width: 254px;
@@ -313,11 +318,11 @@ html, body {
     scrollbar-color: #CECECE;
 }
 
-.menu-principal-dropdown li:last-child {
+.menu-principal-modal li:last-child {
     display: none;
 }
 
-.dropdown-menu ul li {
+.modal-menu ul li {
     margin-top: 20px;
     font-weight: 400;
     font-size: 13px;
@@ -349,6 +354,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    /* margin-top: 100px; */
 }
 
 .imagem-banner{
@@ -736,6 +742,10 @@ form{
     justify-content: center;
 }
 
+.chekbox-formulario p{
+    margin-top: 15px;
+}
+
 form p{
     color: #656565;
     font-weight: 700;
@@ -808,7 +818,7 @@ form p{
     top: 70%;
     width: 0;
     height: 0;
-    right: 65%;
+    right: 100%;
 }
 
 #imagem-cartao{
@@ -834,7 +844,11 @@ form p{
     margin-top: 20px;
 }
 
-.dropdown-mobile{
+.dopdown-mobile{
+    display: none;
+}
+
+#imagem-cartao-mobile{
     display: none;
 }
 
@@ -852,7 +866,7 @@ form p{
         font-size: 13px;
     }
 
-    .container-dropdown{
+    .container-modal{
         margin-left: 40px;
     }
 
@@ -910,7 +924,7 @@ form p{
           font-size: 9px;
       }
 
-      .container-dropdown {
+      .container-modal {
           margin-left: 400px;
       }
 
@@ -1177,7 +1191,7 @@ form p{
         margin: 0;
     }
 
-    .container-dropdown{
+    .container-modal{
         display: none;
     }
 
@@ -1516,9 +1530,14 @@ form p{
         color: #000000;
         font-weight: 700;
         padding-left: 140px;
+       
     }
 
-    .dropdown-menu li{
+    .dopdown-mobile{
+        display: block;
+    }
+
+    .modal-menu li{
      margin-left: 150px;
     }
     
