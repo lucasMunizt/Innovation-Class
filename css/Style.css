@@ -9,10 +9,10 @@
 html, body {
     width: 100%;
     overflow-x: hidden;
-  }
+}
 
   header{
-    margin-bottom:100px ;
+    margin-bottom:90px ;
   }
   
 .container-header{
@@ -244,7 +244,7 @@ html, body {
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.16);
     width: 1160px;
     height: 340px;
-    column-gap: 50px;
+    gap: 120px;
 }
 
 
@@ -264,10 +264,10 @@ html, body {
     width: 256px;
     height: 320px;
     border-radius: 10px;
-    margin-right: 0px;
+    margin-right: 0;
     margin-top: 5px;
-    padding-right: 40px;
-}
+    display: flex;
+}   
 
 .valores-img {
     display: flex;

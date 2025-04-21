@@ -12,38 +12,38 @@ const botaoBusca = document.getElementById("icone-busca");
 const inputBusca = document.getElementById("input-busca");
 const resultadoBusca = document.getElementById("resultado-busca");
 document.addEventListener("DOMContentLoaded", function() {
-  function mostrarDropdown() {
-      dropdownMenu.style.display = "block";
-      primeiroCategoria.forEach(item=>{
-       item.style.color = "#005CFF"
-      });
-  }
-
-  function esconderDropdown(e) {
-    dropdownMenu.style.display = "none";
-  }
-
-  todasCategorias.addEventListener("mouseenter", mostrarDropdown);
-  departamentoDropdown.addEventListener("mouseenter", mostrarDropdown);
-  dropdownMenu.addEventListener("mouseenter", mostrarDropdown);
-
- todasCategorias.addEventListener("mouseleave", function(e) {
-    if (!dropdownMenu.contains(e.relatedTarget)) {
-      esconderDropdown();
+    function mostrarDropdown() {
+        dropdownMenu.style.display = "block";
+        primeiroCategoria.forEach(item=>{
+        item.style.color = "#005CFF"
+        });
     }
-  });
 
-  departamentoDropdown.addEventListener("mouseleave", function(e) {
-    if (!dropdownMenu.contains(e.relatedTarget)) {
-      esconderDropdown();
+    function esconderDropdown(e) {
+      dropdownMenu.style.display = "none";
     }
-  });
+
+    todasCategorias.addEventListener("mouseenter", mostrarDropdown);
+    departamentoDropdown.addEventListener("mouseenter", mostrarDropdown);
+    dropdownMenu.addEventListener("mouseenter", mostrarDropdown);
+
+    todasCategorias.addEventListener("mouseleave", function(e) {
+        if (!dropdownMenu.contains(e.relatedTarget)) {
+          esconderDropdown();
+        }
+    });
+
+    departamentoDropdown.addEventListener("mouseleave", function(e) {
+      if (!dropdownMenu.contains(e.relatedTarget)) {
+        esconderDropdown();
+      }
+    });
 
     todasCategorias.addEventListener("mouseenter",function(e){
       menuPrincipalDropdown.style.display = "block"; 
-      dropdowMenu.style.gridTemplateColumns = "repeat(5,1fr)";
-      imgDropdown.style.marginRight = "0px";
-      dropdowMenu.style.columnGap  = '45px'
+      dropdowMenu.style.gridTemplateColumns = "repeat(6,1fr)";
+      imgDropdown.style.marginLeft = "20px";
+      dropdowMenu.style.columnGap  = '80px'
       textoDepartamento.style.display = "none";
       tabelasCategorias.forEach(index=>{
         index.style.marginTop = "0";
